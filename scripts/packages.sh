@@ -8,6 +8,10 @@ error_handle() {
 }
 trap error_handle ERR
 
+# Ensure we are in the correct directory
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd $SCRIPT_DIR
+
 # Update wally packages & custom ones, fix wally types.
 wally install
 git submodule update --init
