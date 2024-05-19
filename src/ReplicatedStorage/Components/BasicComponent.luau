@@ -5,7 +5,8 @@
 --// Local Variables \\--
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Packages = ReplicatedStorage.Packages
-local Fusion = require(Packages.fusion)
+local CustomPackages = Packages.Custom
+local Fusion = require(CustomPackages.fusion)
 
 local Peek = Fusion.peek
 local Children = Fusion.Children

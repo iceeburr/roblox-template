@@ -74,7 +74,10 @@
       "Packages": {
         "$path": "Packages",
         "Custom": {
-          "$path": "CustomPackages"
+          "$className": "Folder",
+          "fusion": {
+            "$path": "CustomPackages/fusion/src"
+          }
         }
       }
     },
