@@ -1,0 +1,15 @@
+{
+    "name": "@dphfox/fusion",
+    "version": "0.3.0",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dphfox/Fusion.git"
+    },
+    "contributors": [
+        "dphfox"
+    ],
+    "bugs": {
+        "url": "https://github.com/dphfox/Fusion/issues"
+    }
+}
