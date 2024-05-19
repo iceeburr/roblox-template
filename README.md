@@ -1,10 +1,3 @@
-<style>
-    table, th, td {
-        border: 1px solid black;
-        text-align: center;
-    }
-</style>
-
 <div align='center'>
     <img src="./gh-assets/project_logo.svg" alt="Project Logo" width="150" height="150">
     <h1 id="Project">Your Project Name</h1>
@@ -15,6 +8,7 @@
     <a href="https://www.paypal.me/iceeburr"><img src="https://img.shields.io/badge/donate-PayPal-green.svg" alt="Donate"></a>
 </div>
 
+<h1>THIS REPOSITORY IS STILL IN DEVELOPMENT<br>DO NOT USE IT YET!!!</h1>
 <h2 id="Navigation">Navigation</h2>
 
 <nav>

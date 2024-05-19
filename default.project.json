@@ -76,7 +76,7 @@
         "Custom": {
           "$className": "Folder",
           "fusion": {
-            "$path": "CustomPackages/fusion/src"
+            "$path": "CustomPackages/Fusion/src"
           }
         }
       }
