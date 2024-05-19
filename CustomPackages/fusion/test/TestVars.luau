@@ -1,5 +1,0 @@
---!strict
-
-return {
-	runTests = true
-}
