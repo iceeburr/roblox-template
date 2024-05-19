@@ -2,7 +2,7 @@
 /.vscode/settings.json
 
 # Wally Packages
-/Packages
+/Packages/*
 
 # Rojo Sourcemap
 /sourcemap.json
@@ -21,3 +21,6 @@
 
 # Lua Type Files
 /globalTypes.d.lua
+
+# Keep Tracking Empty Folders
+!.gitkeep

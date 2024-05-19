@@ -9,9 +9,6 @@ error_handle() {
 trap error_handle ERR
 
 # Build the project.
-wally install
-rojo sourcemap default.project.json -o sourcemap.json
-wally-package-types --sourcemap sourcemap.json Packages
 rojo build default.project.json -o Place.rbxl
 
 echo "Successfully built the project."

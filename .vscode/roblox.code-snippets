@@ -1,0 +1,193 @@
+{
+    // Code
+    "Comment": {
+        "scope": "lua, luau",
+        "prefix": "comment",
+        "body": [
+            "--//  \\\\\\--"
+        ],
+        "description": "Insert a comment"
+    },
+	"Create Script": {
+	    "scope": "lua, luau",
+	    "prefix": "new",
+	    "body": [
+	        "--!native",
+	        "--!optimize 2",
+	        "--!strict",
+	        "",
+	        "--// Local Variables \\\\\\--",
+	        "",
+	        "",
+	        "--// Code \\\\\\--",
+	        "",
+	        ""
+	    ],
+	    "description": "Create a new script"
+	},
+    "Fusion Child Component": {
+        "scope": "lua, luau",
+        "prefix": "childcomponent",
+        "body": [
+            "--!native",
+            "--!optimize 2",
+            "--!strict",
+            "",
+            "--// Local Variables \\\\--",
+            "local ReplicatedStorage = game:GetService(\"ReplicatedStorage\")",
+            "local Packages = ReplicatedStorage.Packages",
+            "local CustomPackages = Packages.Custom",
+            "local Fusion = require(CustomPackages.fusion)",
+            "",
+            "local Peek = Fusion.peek",
+            "local Children = Fusion.Children",
+            "local Out = Fusion.Out",
+            "local OnEvent = Fusion.OnEvent",
+            "local OnChange = Fusion.OnChange",
+            "local Ref = Fusion.Ref",
+            "type UsedAs<T> = Fusion.UsedAs<T>",
+            "",
+            "--// Code \\\\--",
+            "return function(",
+            "\tOuterScope: Fusion.Scope<typeof(Fusion)>,",
+            "\tProperties: {",
+            "",
+            "\t}): Fusion.Child",
+            "\tlocal Scope = OuterScope:innerScope()",
+            "",
+            "\tlocal IsHovering = Scope:Value(false)",
+            "",
+            "\treturn Scope:New \"Frame\" {",
+            "\t\t",
+            "\t}",
+            "end"
+        ],
+        "description": "Insert Fusion Child Component"
+    },
+
+    // Client Variables
+    "Local Player": {
+        "scope": "lua, luau",
+        "prefix": "localplayer",
+        "body": [
+            "local LocalPlayer = Players.LocalPlayer"
+        ],
+        "description": "Insert Local Player"
+    },
+    "Character": {
+        "scope": "lua, luau",
+        "prefix": "character",
+        "body": [
+            "local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()"
+        ],
+        "description": "Insert Character"
+    },
+    "Player Gui": {
+        "scope": "lua, luau",
+        "prefix": "playergui",
+        "body": [
+            "local PlayerGui = LocalPlayer.PlayerGui"
+        ],
+        "description": "Insert Player Gui"
+    },
+    "Wally Packages": {
+        "scope": "lua, luau",
+        "prefix": "packages",
+        "body": [
+            "local Packages = ReplicatedStorage.Packages"
+        ],
+        "description": "Insert Wally Packages"
+    },
+    "Custom Packages": {
+        "scope": "lua, luau",
+        "prefix": "custompackages",
+        "body": [
+            "local CustomPackages = Packages.Custom"
+        ],
+        "description": "Insert Custom Packages"
+    },
+    "Fusion": {
+        "scope": "lua, luau",
+        "prefix": "fusion",
+        "body": [
+            "local Fusion = require(Packages.fusion)"
+        ],
+        "description": "Insert Fusion Package"
+    },
+    "UI Components": {
+        "scope": "lua, luau",
+        "prefix": "components",
+        "body": [
+            "local Components = ReplicatedStorage.Components"
+        ],
+        "description": "Insert Compoents Folder"
+    },
+    "Fusion Scope": {
+        "scope": "lua, luau",
+        "prefix": "newscope",
+        "body": [
+            "local Scope = Fusion.scoped(Fusion, {",
+            "\tBasicComponent = require(Components.BasicComponent),",
+            "\t",
+            "})"
+        ],
+        "description": "Insert Fusion Scope"
+    },
+    "Fusion Types": {
+        "scope": "lua, luau",
+        "prefix": "fusiontypes",
+        "body": [
+            "local Peek = Fusion.peek",
+            "local Children = Fusion.Children",
+            "local Out = Fusion.Out",
+            "local OnEvent = Fusion.OnEvent",
+            "local OnChange = Fusion.OnChange",
+            "local Ref = Fusion.Ref",
+            "type UsedAs<T> = Fusion.UsedAs<T>"
+        ],
+        "description": "Insert Basic Fusion Functions"
+    },
+
+    // Services
+    "Players": {
+        "scope": "lua, luau",
+        "prefix": "players",
+        "body": [
+            "local Players = game:GetService(\"Players\")"
+        ],
+        "description": "Insert Players Service"
+    },
+    "Lighting": {
+        "scope": "lua, luau",
+        "prefix": "lighting",
+        "body": [
+            "local Lighting = game:GetService(\"Lighting\")"
+        ],
+        "description": "Insert Players Service"
+    },
+	"Replicated First": {
+        "scope": "lua, luau",
+        "prefix": "repfirst",
+        "body": [
+            "local ReplicatedFirst = game:GetService(\"ReplicatedFirst\")"
+        ],
+        "description": "Insert Replicated First Service"
+    },
+	"Replicated Storage": {
+        "scope": "lua, luau",
+        "prefix": "repstorage",
+        "body": [
+            "local ReplicatedStorage = game:GetService(\"ReplicatedStorage\")"
+        ],
+        "description": "Insert Replicated Storage Service"
+    },
+	"Server Storage": {
+        "scope": "lua, luau",
+        "prefix": "serverstorage",
+        "body": [
+            "local ServerStorage = game:GetService(\"ServerStorage\")"
+        ],
+        "description": "Insert Server Storage Service"
+    },
+
+}

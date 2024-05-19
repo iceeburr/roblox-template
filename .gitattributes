@@ -1,2 +1,4 @@
 * text=auto
-*.luau linguist-language = Lua
+*.luau linguist-language=Lua
+CustomPackages/* linguist-vendored
+Packages/* linguist-vendored

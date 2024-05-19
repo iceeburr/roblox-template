@@ -5,9 +5,9 @@ registry = "test"
 [[package]]
 name = "author/project-name"
 version = "0.0.0"
-dependencies = [["fusion", "elttob/fusion@0.3.0-dev.1"]]
+dependencies = [["base64", "reselim/base64@3.0.0"]]
 
 [[package]]
-name = "elttob/fusion"
-version = "0.3.0-dev.1"
+name = "reselim/base64"
+version = "3.0.0"
 dependencies = []

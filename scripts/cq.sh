@@ -13,10 +13,7 @@ error_handle() {
 }
 trap 'error_handle "$BASH_COMMAND"' ERR
 
-# Build the project.
-wally install
-rojo sourcemap default.project.json -o sourcemap.json
-wally-package-types --sourcemap sourcemap.json Packages
+# Analyze the project.
 curl -L "https://raw.githubusercontent.com/JohnnyMorganz/luau-lsp/main/scripts/globalTypes.d.lua" > "globalTypes.d.lua"
 rojo sourcemap default.project.json -o sourcemap.json
 luau-lsp analyze --sourcemap sourcemap.json --definitions globalTypes.d.lua src tests

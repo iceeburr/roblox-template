@@ -4,6 +4,8 @@
 
 --// Local Variables \\--
 local ReplicatedFirst = game:GetService("ReplicatedFirst")
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
 local Screen = require(ReplicatedFirst.Screen)
 
 --// Code \\--

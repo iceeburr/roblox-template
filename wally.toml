@@ -7,4 +7,4 @@ realm = "shared"
 private = true
 
 [dependencies]
-fusion = "elttob/fusion@0.3.0-dev.1"
+base64 = "reselim/base64@3.0.0"

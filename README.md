@@ -86,7 +86,7 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
     <ul>
         <li>Aftman - required to be installed.</li>
         <li>Sourcemap - will generate a sourcemap.json of the project.</li>
-        <li>Packages - will install wally packages.</li>
+        <li>Packages - will install wally packages & update custom ones with git submodules.</li>
         <li>Types - will fix broken wally types</li>
         <li>Builds - will build the place file.</li>
         <li>Serves - will automatically start serving the place file.</li>
@@ -98,7 +98,7 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
     <p>
     <br>
     <table>
-        <tr>
+        <tr align="center">
             <th>Name</th>
             <th>Aftman</th>
             <th>Sourcemap</th>
@@ -109,7 +109,7 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
             <th>Starts</th>
             <th>CQ</th>
         </tr>
-        <tr>
+        <tr align="center">
             <td>install.sh</td>
             <td>❌</td>
             <td>✅</td>
@@ -120,18 +120,18 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
             <td>❌</td>
             <td>❌</td>
         </tr>
-        <tr>
+        <tr align="center">
             <td>build.sh</td>
             <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>❌</td>
             <td>✅</td>
             <td>❌</td>
             <td>❌</td>
             <td>❌</td>
         </tr>
-        <tr>
+        <tr align="center">
             <td>serve.sh</td>
             <td>✅</td>
             <td>❌</td>
@@ -142,7 +142,7 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
             <td>❌</td>
             <td>❌</td>
         </tr>
-        <tr>
+        <tr align="center">
             <td>start.sh</td>
             <td>✅</td>
             <td>❌</td>
@@ -153,8 +153,19 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
             <td>✅</td>
             <td>❌</td>
         </tr>
-        <tr>
-            <td>wally.sh</td>
+        <tr align="center">
+            <td>types.sh</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>❌</td>
+        </tr>
+        <tr align="center">
+            <td>packages.sh</td>
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>
@@ -164,12 +175,12 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
             <td>❌</td>
             <td>❌</td>
         </tr>
-        <tr>
+        <tr align="center">
             <td>cq.sh</td>
             <td>✅</td>
             <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
+            <td>❌</td>
+            <td>❌</td>
             <td>❌</td>
             <td>❌</td>
             <td>❌</td>

@@ -51,6 +51,7 @@ rm -r .git
 # Install dependencies.
 aftman install --no-trust-check
 wally install
+git submodule update --init
 
 # Build the project.
 rojo sourcemap default.project.json -o sourcemap.json

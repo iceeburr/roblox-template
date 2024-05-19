@@ -34,6 +34,9 @@
         "StreamingMinRadius": 64,
         "StreamingTargetRadius": 1024,
         "StreamOutBehavior": "Default"
+      },
+      "SpawnLocation": {
+        "$path": "assets/models/SpawnLocation.rbxm"
       }
     },
 
