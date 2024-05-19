@@ -1,0 +1,10 @@
+[package]
+name = "author/project-name"
+version = "0.0.0"
+authors = ["author"]
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+private = true
+
+[dependencies]
+fusion = "elttob/fusion@0.3.0-dev.1"

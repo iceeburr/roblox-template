@@ -1,0 +1,6 @@
+[tools]
+rojo = "rojo-rbx/rojo@7.4.1"
+rbxcloud = "Sleitnick/rbxcloud@0.6.1"
+Wally = "UpliftGames/Wally@0.3.2"
+wally-package-types = "JohnnyMorganz/wally-package-types@1.3.1"
+luau-lsp = "JohnnyMorganz/luau-lsp@1.28.1"

@@ -1,0 +1,23 @@
+# Visual Studio Code Files
+/.vscode/settings.json
+
+# Wally Packages
+/Packages
+
+# Rojo Sourcemap
+/sourcemap.json
+
+# Roblox Model Files
+/*.rbxm
+/*.rbxmx
+
+# Roblox Place Files
+/*.rbxl
+/*.rbxlx
+
+# Roblox Studio Lock Files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+# Lua Type Files
+/globalTypes.d.lua

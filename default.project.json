@@ -1,0 +1,157 @@
+{
+  "name": "your-project-name",
+  "tree": {
+    "$className": "DataModel",
+
+    "HttpService": {
+      "$properties": {
+        "HttpEnabled": true
+      }
+    },
+
+    "Workspace": {
+      "$properties": {
+        "Scale": 1,
+        "AllowThirdPartySales": false,
+        "ClientAnimatorThrottling": "Default",
+        "FallenPartsDestroyHeight": -500,
+        "FluidForces": "Default",
+        "GlobalWind": [0, 0, 0],
+        "Gravity": 196.2,
+        "IKControlConstraintSupport": "Default",
+        "MeshPartHeadsAndAccessories": "Default",
+        "PhysicsSteppingMethod": "Default",
+        "PlayerCharacterDestroyBehavior": "Default",
+        "Retargeting": "Default",
+        "SignalBehavior": "Default",
+        "TouchesUseCollisionGroups": false,
+        "AirDensity": 0.001,
+        "RejectCharacterDeletions": "Default",
+        "EditorLiveScripting": "Disabled",
+        "StreamingEnabled": true,
+        "ModelStreamingBehavior": "Default",
+        "StreamingIntegrityMode": "Default",
+        "StreamingMinRadius": 64,
+        "StreamingTargetRadius": 1024,
+        "StreamOutBehavior": "Default"
+      }
+    },
+
+    "Players": {
+      "$properties": {
+        "RespawnTime": 0,
+        "CharacterAutoLoads": true,
+        "UseStrafingAnimations": false
+      }
+    },
+
+    "Lighting": {
+      "$properties": {
+        "Ambient": [0.4980392156862745, 0.4980392156862745, 0.4980392156862745],
+        "Brightness": 1,
+        "ColorShift_Bottom": [0, 0, 0],
+        "ColorShift_Top": [0, 0, 0],
+        "EnvironmentDiffuseScale": 0,
+        "EnvironmentSpecularScale": 0,
+        "GlobalShadows": true,
+        "OutdoorAmbient": [0.4980392156862745, 0.4980392156862745, 0.4980392156862745],
+        "Technology": "Future",
+        "ClockTime": 12,
+        "GeographicLatitude": 41.733,
+        "ExposureCompensation": 0,
+        "FogColor": [0.7490196078431373, 0.7490196078431373, 0.7490196078431373],
+        "FogEnd": 100000,
+        "FogStart": 0
+      }
+    },
+
+    "ReplicatedFirst": {
+      "$path": "src/ReplicatedFirst"
+    },
+
+    "ReplicatedStorage": {
+      "$path": "src/ReplicatedStorage",
+      "Packages": {
+        "$path": "Packages",
+        "Custom": {
+          "$path": "CustomPackages"
+        }
+      }
+    },
+
+    "ServerScriptService": {
+      "$path": "src/ServerScriptService",
+      "$properties": {
+        "LoadStringEnabled": false
+      }
+    },
+
+    "ServerStorage": {
+      "$path": "src/ServerStorage"
+    },
+
+    "StarterGui": {
+      "$properties": {
+        "ScreenOrientation": "LandscapeSensor",
+        "ShowDevelopmentGui": true,
+        "RtlTextSupport": "Default",
+        "VirtualCursorMode": "Default"
+      }
+    },
+
+    "StarterPlayer": {
+      "$properties": {
+        "HealthDisplayDistance": 100,
+        "NameDisplayDistance": 100,
+        "CameraMaxZoomDistance": 400,
+        "CameraMinZoomDistance": 0.5,
+        "CameraMode": "Classic",
+        "DevCameraOcclusionMode": "Zoom",
+        "DevComputerCameraMovementMode": "UserChoice",
+        "DevTouchCameraMovementMode": "UserChoice",
+        "CharacterMaxSlopeAngle": 89,
+        "CharacterWalkSpeed": 16,
+        "EnableDynamicHeads": "Default",
+        "LoadCharacterAppearance": true,
+        "LoadCharacterLayeredClothing": "Default",
+        "UserEmotesEnabled": true,
+        "CharacterJumpPower": 50,
+        "CharacterUseJumpPower": true,
+        "DevComputerMovementMode": "UserChoice",
+        "DevTouchMovementMode": "UserChoice",
+        "EnableMouseLockOption": true,
+        "AutoJumpEnabled": true
+      },
+
+      "StarterCharacterScripts": {
+        "$className": "StarterCharacterScripts",
+        "$path": "src/StarterCharacterScripts"
+      },
+
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "$path": "src/StarterPlayerScripts"
+      }
+    },
+
+    "SoundService": {
+      "$properties": {
+        "AmbientReverb": "NoReverb",
+        "DistanceFactor": 3.33,
+        "DopplerScale": 1,
+        "RespectFilteringEnabled": true,
+        "RolloffScale": 1,
+        "VolumetricAudio": "Automatic"
+      }
+    },
+
+    "TextChatService": {
+      "$properties": {
+        "ChatTranslationEnabled": false,
+        "ChatVersion": "TextChatService",
+        "CreateDefaultCommands": true,
+        "CreateDefaultTextChannels": true
+      }
+    }
+  }
+}
