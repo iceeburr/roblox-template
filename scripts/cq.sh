@@ -15,7 +15,7 @@ trap 'error_handle "$BASH_COMMAND"' ERR
 
 # Ensure we are in the correct directory
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-cd $SCRIPT_DIR
+cd "$SCRIPT_DIR"
 
 # Analyze the project.
 curl -L "https://raw.githubusercontent.com/JohnnyMorganz/luau-lsp/main/scripts/globalTypes.d.lua" > "globalTypes.d.lua"
