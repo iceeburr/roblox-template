@@ -67,11 +67,6 @@ if ! command -v aftman >/dev/null 2>&1; then
     esac
 fi
 
-# Remove .git tracking
-if ! $GITKEEP; then
-  rm -rf .git
-fi
-
 # Install dependencies
 aftman install --no-trust-check
 wally install
@@ -81,6 +76,11 @@ git submodule update --init
 rojo sourcemap default.project.json -o sourcemap.json
 wally-package-types --sourcemap sourcemap.json Packages
 rojo build default.project.json -o Place.rbxl
+
+# Remove .git tracking
+if ! $GITKEEP; then
+  rm -rf .git
+fi
 
 # Success
 echo "Successfully installed project dependencies."
