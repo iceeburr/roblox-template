@@ -82,7 +82,7 @@ touch Packages/.gitkeep
 
 # Remove .git tracking
 if ! $GITKEEP; then
-  rm -rf .git
+  git remote remove origin
 fi
 
 # Success
