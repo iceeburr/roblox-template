@@ -24,3 +24,7 @@
 
 # Keep Tracking Empty Folders
 !.gitkeep
+
+# Environmental Variables
+*.env*
+!.env.template
