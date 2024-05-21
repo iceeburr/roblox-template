@@ -49,6 +49,13 @@ if ! command -v aftman >/dev/null 2>&1; then
                     # Remove the downloaded files
                     rm aftman.exe
                     rm aftman.zip
+                    # Add aftman to PATH
+                    AFTMAN_PATH="$(cygpath -m "$HOME")/.aftman/bin/aftman.exe"
+                    if ! grep -q "$AFTMAN_PATH" ~/.bashrc; then
+                        echo "export PATH=\$PATH:$AFTMAN_PATH" >> ~/.bashrc
+                    fi
+                    # Source bashrc to update PATH
+                    source ~/.bashrc
                     ;;
                 * )
                     echo "Unsupported operating system. Please install it manually from https://github.com/LPGhatguy/aftman/releases"
@@ -68,6 +75,8 @@ if ! command -v aftman >/dev/null 2>&1; then
 fi
 
 # Install dependencies
+aftman add --global rojo-rbx/rojo
+aftman add --global UpliftGames/wally
 aftman install --no-trust-check
 wally install
 git submodule update --init
