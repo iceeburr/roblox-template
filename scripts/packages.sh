@@ -18,7 +18,5 @@ git submodule update --init
 rojo sourcemap default.project.json -o sourcemap.json
 wally-package-types --sourcemap sourcemap.json Packages
 
-# Readd .gitkeep to packages folder
-touch Packages/.gitkeep
 
 echo "Successfully updated packages."
