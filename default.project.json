@@ -35,8 +35,8 @@
         "StreamingTargetRadius": 1024,
         "StreamOutBehavior": "Default"
       },
-      "SpawnLocation": {
-        "$path": "assets/models/SpawnLocation.rbxm"
+      "Map": {
+        "$path": "assets/models/Baseplate.rbxm"
       }
     },
 
@@ -49,27 +49,29 @@
     },
 
     "Lighting": {
+      "$className": "Lighting",
       "$properties": {
-        "Ambient": [0.4980392156862745, 0.4980392156862745, 0.4980392156862745],
-        "Brightness": 1,
+        "Ambient": [0.014285714285714285, 0.014285714285714285, 0.014285714285714285],
+        "Brightness": 3,
         "ColorShift_Bottom": [0, 0, 0],
         "ColorShift_Top": [0, 0, 0],
-        "EnvironmentDiffuseScale": 0,
-        "EnvironmentSpecularScale": 0,
+        "EnvironmentDiffuseScale": 1,
+        "EnvironmentSpecularScale": 1,
         "GlobalShadows": true,
-        "OutdoorAmbient": [0.4980392156862745, 0.4980392156862745, 0.4980392156862745],
-        "Technology": "Future",
-        "ClockTime": 12,
+        "OutdoorAmbient": [0.014285714285714285, 0.014285714285714285, 0.014285714285714285],
+        "ShadowSoftness": 1,
+        "Technology": "ShadowMap",
+        "ClockTime": 14.5,
         "GeographicLatitude": 41.733,
-        "ExposureCompensation": 0,
-        "FogColor": [0.7490196078431373, 0.7490196078431373, 0.7490196078431373],
-        "FogEnd": 100000,
-        "FogStart": 0
+        "ExposureCompensation": 0
       }
     },
 
     "ReplicatedFirst": {
-      "$path": "src/ReplicatedFirst"
+      "$path": "src/ReplicatedFirst",
+      "LightingEffects": {
+        "$path": "assets/models/LightingEffects.rbxm"
+      }
     },
 
     "ReplicatedStorage": {
