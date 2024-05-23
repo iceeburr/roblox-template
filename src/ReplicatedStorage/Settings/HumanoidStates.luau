@@ -1,10 +1,4 @@
---!native
---!optimize 2
---!strict
-
---// Local Variables \\--
-local Humanoid: Humanoid = script.Parent.Humanoid
-local Settings = {
+return {
     FallingDown       = false,
     Ragdoll           = false,
     GettingUp         = false,
@@ -22,8 +16,3 @@ local Settings = {
     Dead              = false,
     Physics           = false
 }
-
---// Code \\--
-for State, Value in pairs(Settings) do
-    Humanoid:SetStateEnabled(State, Value)
-end

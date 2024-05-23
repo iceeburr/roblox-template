@@ -25,6 +25,30 @@
 	    ],
 	    "description": "Create a new script"
 	},
+    "Benchmark Template": {
+        "scope": "lua, luau",
+        "prefix": "benchmark",
+        "body": [
+            "--[[",
+            "This file is for use by Benchmarker (https://boatbomber.itch.io/benchmarker)",
+            "",
+            "|WARNING| THIS RUNS IN YOUR REAL ENVIRONMENT. |WARNING|",
+            "--]]",
+            "",
+            "return {",
+            "\tParameterGenerator = function()",
+            "\t\treturn",
+            "\tend,",
+            "",
+            "\tFunctions = {",
+            "\t\t[\"A\"] = function(Profiler) end,",
+            "",
+            "\t\t[\"B\"] = function(Profiler) end,",
+            "\t},",
+            "}"
+        ],
+        "description": "Insert Benchmark Template"
+    },
     "Fusion Child Component": {
         "scope": "lua, luau",
         "prefix": "childcomponent",
@@ -148,7 +172,7 @@
         "description": "Insert Basic Fusion Functions"
     },
 
-    // Services
+    // Basic Services
     "Players": {
         "scope": "lua, luau",
         "prefix": "players",
@@ -190,4 +214,110 @@
         "description": "Insert Server Storage Service"
     },
 
+    // Advanced Services
+    "Run Service": {
+        "scope": "lua, luau",
+        "prefix": "runservice",
+        "body": [
+            "local RunService = game:GetService(\"RunService\")"
+        ],
+        "description": "Insert Run Service"
+    },
+    "Tween Service": {
+        "scope": "lua, luau",
+        "prefix": "tweenservice",
+        "body": [
+            "local TweenService = game:GetService(\"TweenService\")"
+        ],
+        "description": "Insert Tween Service"
+    },
+    "Marketplace Service": {
+        "scope": "lua, luau",
+        "prefix": "marketplaceservice",
+        "body": [
+            "local MarketplaceService = game:GetService(\"MarketplaceService\")"
+        ],
+        "description": "Insert Marketplace Service"
+    },
+    "Insert Service": {
+        "scope": "lua, luau",
+        "prefix": "insertservice",
+        "body": [
+            "local InsertService = game:GetService(\"InsertService\")"
+        ],
+        "description": "Insert \"Insert Service\""
+    },
+    "Debris Service": {
+        "scope": "lua, luau",
+        "prefix": "debrisservice",
+        "body": [
+            "local Debris = game:GetService(\"Debris\")"
+        ],
+        "description": "Insert Debris Service"
+    },
+    "Collection Service ": {
+        "scope": "lua, luau",
+        "prefix": "collectionservice",
+        "body": [
+            "local CollectionService = game:GetService(\"CollectionService\")"
+        ],
+        "description": "Insert Collection Service"
+    },
+    "Http Service": {
+        "scope": "lua, luau",
+        "prefix": "httpservice",
+        "body": [
+            "local HttpService = game:GetService(\"HttpService\")"
+        ],
+        "description": "Insert Http Service"
+    },
+    "User Input Service": {
+        "scope": "lua, luau",
+        "prefix": "userinputservice",
+        "body": [
+            "local UserInputService = game:GetService(\"UserInputService\")"
+        ],
+        "description": "Insert User Input Service"
+    },
+    "Data Store Service": {
+        "scope": "lua, luau",
+        "prefix": "datastoreservice",
+        "body": [
+            "local DataStoreService = game:GetService(\"DataStoreService\")"
+        ],
+        "description": "Insert Data Store Service"
+    },
+    "Content Action Service": {
+        "scope": "lua, luau",
+        "prefix": "contentactionservice",
+        "body": [
+            "local ContentActionService = game:GetService(\"ContextActionService\")"
+        ],
+        "description": "Insert Content Action Service"
+    },
+    "Content Provider": {
+        "scope": "lua, luau",
+        "prefix": "contentprovider",
+        "body": [
+            "local ContentProvider = game:GetService(\"ContentProvider\")"
+        ],
+        "description": "Insert Content Provider Service"
+    },
+
+    // Miscellaneous
+    "Lua Linter Settings": {
+        "prefix": "luarc",
+        "body": [
+            "{",
+            "  \"languageMode\": \"strict\",",
+            "  \"lint\": {",
+            "\t\"*\": true",
+            "  },",
+            "  \"lintErrors\": true,",
+            "  \"typeErrors\": true,",
+            "  \"globals\": []",
+            "}"
+        ],
+        "description": "Insert Basic Linter Settings"
+    },
 }

@@ -27,11 +27,13 @@ return function(
     local IsHovering = Scope:Value(false)
 
     return Scope:New "Frame" {
+        Name = "Basic Component",
         Size = UDim2.fromScale(1, 1),
         BackgroundColor3 = Color3.fromRGB(80, 0, 0),
 
         [Children] = {
             Scope:New "TextLabel" {
+                Name = "FusionVersion",
                 AnchorPoint = Vector2.new(0.5, 0.5),
                 Position = UDim2.fromScale(0.5, 0.5),
                 Size = UDim2.fromScale(1, 0.15),

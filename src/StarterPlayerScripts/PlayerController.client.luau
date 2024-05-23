@@ -27,8 +27,8 @@ local Scope = Fusion.scoped(Fusion, {
 })
 
 --// Code \\--
-task.wait(5)
-Scope:New "ScreenGui" {
+task.wait(2)
+local NewLoadingScreen = Scope:New "ScreenGui" {
     Parent = PlayerGui,
     IgnoreGuiInset = true,
     [Children] = {
@@ -42,3 +42,5 @@ local OldLoadingScreen = PlayerGui:FindFirstChild("StaticLoadingScreen")
 if OldLoadingScreen then
     OldLoadingScreen:Destroy()
 end
+task.wait(2)
+Scope:doCleanup()
