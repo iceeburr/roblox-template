@@ -4,7 +4,7 @@
     <h3>A template for Roblox developers to integrate advanced CLI tools like Rojo into GitHub workflows, streamlining build, test, and deploy processes.</h3>
     <img src="https://github.com/iceeburr/roblox-video-codec/actions/workflows/ci.yaml/badge.svg" alt="CI">
     <img src="https://github.com/iceeburr/roblox-video-codec/actions/workflows/release.yaml/badge.svg" alt="Build & Deploy">
-    <a href=""><img src="https://img.shields.io/github/issues/iceeburr/roblox-video-codec.svg" alt="Issues"></a>
+    <a href=""><img src="https://img.shields.io/github/issues/iceeburr/roblox-template.svg" alt="Issues"></a>
     <a href="https://www.paypal.me/iceeburr"><img src="https://img.shields.io/badge/donate-PayPal-green.svg" alt="Donate"></a>
 </div>
 
@@ -76,7 +76,7 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
 
 <h2 id="Scripts">Scripts</h2>
 
-<p></p>
+<p>Aftman is required to be installed for all scripts.</p>
 
 <details>
     <summary>Use Cases</summary>
@@ -84,7 +84,6 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
     <p>
     Actions:
     <ul>
-        <li>Aftman - required to be installed.</li>
         <li>Sourcemap - will generate a sourcemap.json of the project.</li>
         <li>Packages - will install wally packages & update custom ones with git submodules.</li>
         <li>Types - will fix broken wally types</li>
@@ -100,7 +99,6 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
     <table>
         <tr align="center">
             <th>Name</th>
-            <th>Aftman</th>
             <th>Sourcemap</th>
             <th>Packages</th>
             <th>Types</th>
@@ -111,7 +109,6 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
         </tr>
         <tr align="center">
             <td>install.sh</td>
-            <td>❌</td>
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>
@@ -122,7 +119,6 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
         </tr>
         <tr align="center">
             <td>build.sh</td>
-            <td>✅</td>
             <td>❌</td>
             <td>❌</td>
             <td>❌</td>
@@ -133,7 +129,6 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
         </tr>
         <tr align="center">
             <td>serve.sh</td>
-            <td>✅</td>
             <td>❌</td>
             <td>❌</td>
             <td>❌</td>
@@ -144,7 +139,6 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
         </tr>
         <tr align="center">
             <td>start.sh</td>
-            <td>✅</td>
             <td>❌</td>
             <td>❌</td>
             <td>❌</td>
@@ -155,7 +149,6 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
         </tr>
         <tr align="center">
             <td>types.sh</td>
-            <td>✅</td>
             <td>✅</td>
             <td>❌</td>
             <td>✅</td>
@@ -169,7 +162,6 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>
-            <td>✅</td>
             <td>❌</td>
             <td>❌</td>
             <td>❌</td>
@@ -177,7 +169,6 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
         </tr>
         <tr align="center">
             <td>cq.sh</td>
-            <td>✅</td>
             <td>✅</td>
             <td>❌</td>
             <td>❌</td>
@@ -192,7 +183,7 @@ You can either do it manually or use the all-in-one <a href="scripts/install.sh"
 <h2 id="Contributing">Contributing</h2>
 
 <p>
-There are several ways how you can potentially contribute to this project. One important way to contribute is to actually <i>report bugs/issues</i> you might identify. In addition you can also bring up <i>feature/enhancements</i> requests. Another way is to <i>help translating</i> the README to a wider range of different languages by committing to the [translations](translations) folder.
+There are several ways how you can potentially contribute to this project. One important way to contribute is to actually <i>report bugs/issues</i> you might identify. In addition you can also bring up <i>feature/enhancements</i> requests. Another way is to <i>help translating</i> the README to a wider range of different languages by committing to the <a href="translations">translations</a> folder.
 <br>
 Make sure you read the <a href=".github/CODE_OF_CONDUCT.md">Code of Conduct</a> and <a href=".github/CONTRIBUTING.md">Contributing Guide</a> first, as well as all other <a href=".github">support guides</a>.
 </p>

@@ -15,9 +15,9 @@
 /*.rbxl
 /*.rbxlx
 
-# Roblox Studio Lock Files
-/*.rbxlx.lock
-/*.rbxl.lock
+# Lock Files
+/*.lock
+/*.lock
 
 # Lua Type Files
 /globalTypes.d.lua
@@ -28,3 +28,15 @@
 # Environmental Variables
 *.env*
 !.env.template
+
+# Windows Styling
+desktop.ini
+
+# Selene Auto-Generated Config
+/roblox.toml
+
+# Node Modules
+/node_modules
+
+# Production Builds
+/build
