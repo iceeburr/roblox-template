@@ -1,8 +1,9 @@
 # Visual Studio Code Files
 /.vscode/settings.json
 
-# Wally Packages
-/Packages/*
+# Packages
+/Packages
+/CustomPackages
 
 # Rojo Sourcemap
 /sourcemap.json
@@ -40,3 +41,6 @@ desktop.ini
 
 # Production Builds
 /build
+
+# Bytecode Playgrounds
+bytecode.luau

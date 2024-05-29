@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "JohnnyMorganz.luau-lsp",
+        "JohnnyMorganz.stylua",
         "filiptibell.wally-utilities",
         "evaera.vscode-rojo",
     ]
