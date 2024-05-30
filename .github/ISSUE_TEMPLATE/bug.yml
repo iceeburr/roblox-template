@@ -2,7 +2,8 @@ name: "Bug Report"
 description: "Create a new report for a bug."
 title: "Summarize your report."
 labels: ["bug"]
-assignees: "iceeburr"
+assignees:
+  - iceeburr
 body:
   - type: textarea
     id: description

@@ -2,7 +2,8 @@ name: "Question"
 description: "Ask a general question about anything."
 title: "Summarize your question."
 labels: ["question"]
-assignees: "iceeburr"
+assignees:
+  - iceeburr
 body:
   - type: textarea
     id: description

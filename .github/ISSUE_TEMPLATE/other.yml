@@ -1,0 +1,14 @@
+name: "Other"
+description: "Use this for more complex issues and requests."
+title: "Summarize your issue."
+assignees:
+  - iceeburr
+body:
+  - type: markdown
+    attributes:
+      value: Write anything you want here.
+  - type: textarea
+    attributes:
+      label: "Report"
+      description: "..."
+      placeholder: "..."

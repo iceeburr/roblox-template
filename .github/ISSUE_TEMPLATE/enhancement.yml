@@ -2,7 +2,8 @@ name: "Feature Request"
 description: "Create a new report for a bug."
 title: "Summarize your report."
 labels: ["enhancement"]
-assignees: "iceeburr"
+assignees:
+  - iceeburr
 body:
   - type: dropdown
     id: suggestion-type
@@ -13,7 +14,7 @@ body:
       options:
         - Feature
         - Enhancement
-        - "Concept Idea"
+        - Concept Idea
     validations:
       required: true
   - type: textarea
