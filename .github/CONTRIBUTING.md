@@ -55,6 +55,6 @@ git switch --create 1234-name-issue
 
 Commit your changes, then push the branch to your fork with `git push -u fork` and open a pull request on [the roblox-template repository](https://github.com/iceeburr/roblox-template/) following the template provided.
 
-While not always enforced, it is recommended to follow the code style guide provided. As this is only a template repository, we can only suggest you what to use. The boilerplate code we have follows the official Roblox Lua style guide and the Lua Rocks style guide. We use the default and recommended 4 tab spaces for indentation. All of that is up to your own preference and has no real meaning. You can read both of them here:
-https://roblox.github.io/lua-style-guide/
+While not always enforced, it is recommended to follow the code style guide provided. As this is only a template repository, we can only suggest you what to use. The boilerplate code we have follows the official Roblox Lua style guide and the Lua Rocks style guide. We use the default and recommended 4 tab spaces for indentation. All of that is up to your own preference and has no real meaning. You can read both of them here: <br>
+https://roblox.github.io/lua-style-guide/ <br>
 https://github.com/luarocks/lua-style-guide
