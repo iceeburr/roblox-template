@@ -5,13 +5,13 @@ This file is for use by Benchmarker (https://boatbomber.itch.io/benchmarker)
 --]]
 
 return {
-	ParameterGenerator = function()
-		return
-	end,
+   ParameterGenerator = function()
+      return
+   end,
 
-	Functions = {
-		["A"] = function(Profiler) end,
+   Functions = {
+      ["A"] = function(Profiler) end,
 
-		["B"] = function(Profiler) end,
-	},
+      ["B"] = function(Profiler) end,
+   },
 }

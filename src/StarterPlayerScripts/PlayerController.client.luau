@@ -23,24 +23,24 @@ type UsedAs<T> = Fusion.UsedAs<T>
 
 local Components = ReplicatedStorage.Components
 local Scope = Fusion.scoped(Fusion, {
-    BasicComponent = require(Components.BasicComponent),
+   BasicComponent = require(Components.BasicComponent),
 })
 
 --// Code \\--
 task.wait(2)
-local NewLoadingScreen = Scope:New "ScreenGui" {
-    Parent = PlayerGui,
-    IgnoreGuiInset = true,
-    [Children] = {
-        Scope:BasicComponent {
-            Version = FusionVersion
-        }
-    }
+local NewLoadingScreen = Scope:New("ScreenGui") {
+   Parent = PlayerGui,
+   IgnoreGuiInset = true,
+   [Children] = {
+      Scope:BasicComponent {
+         Version = FusionVersion,
+      },
+   },
 }
 -- Take over the static loading screen
 local OldLoadingScreen = PlayerGui:FindFirstChild("StaticLoadingScreen")
 if OldLoadingScreen then
-    OldLoadingScreen:Destroy()
+   OldLoadingScreen:Destroy()
 end
 task.wait(2)
 Scope:doCleanup()

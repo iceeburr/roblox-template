@@ -11,10 +11,10 @@ local RobloxTypes = require(ReplicatedStorage.Utils.RobloxTypes)
 --// Local Variables \\--
 local HumanoidStates = require(ReplicatedStorage.Settings.HumanoidStates)
 local Character: RobloxTypes.Character = script.Parent
-local Humanoid = Character.Humanoid
+local Humanoid: Humanoid = Character.Humanoid
 
 --// Code \\--
 -- Humanoid Optimizations
 for State, Value in pairs(HumanoidStates) do
-    Character.Humanoid:SetStateEnabled(State, Value)
+   Humanoid:SetStateEnabled(State, Value)
 end

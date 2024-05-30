@@ -1,16 +1,20 @@
 name: "Bug Report"
-description: "Create a new report for a bug."
+description: "Create a bug report."
 title: "Summarize your report."
 labels: ["bug"]
 assignees:
   - iceeburr
 body:
+  - type: markdown
+    attributes:
+      value: Thank you for trying to report any bugs. Let's fix them together!
   - type: textarea
     id: description
     attributes:
       label: "Description"
       description: "Please enter an explicit description of your issue."
-      value: "Short and explicit description of your incident..."
+      placeholder: "Short and explicit description of your incident..."
+      render: markdown
     validations:
       required: true
   - type: textarea
@@ -23,7 +27,7 @@ body:
         "2. Click on '....'"
         "3. Scroll down to '....'"
         "4. See error"
-      render: shell
+      render: markdown
     validations:
       required: true
   - type: textarea
@@ -31,7 +35,7 @@ body:
     attributes:
       label: "Screenshots & Videos"
       description: "If applicable, add any media files to help explain your problem."
-      value: "https://imgur.com/a/iceeburr-5LJTfgw"
+      placeholder: "https://imgur.com/a/iceeburr-5LJTfgw"
     validations:
       required: false
   - type: textarea
@@ -39,7 +43,7 @@ body:
     attributes:
       label: "Logs"
       description: "Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks."
-      render: shell
+      render: markdown
     validations:
       required: false
   - type: dropdown

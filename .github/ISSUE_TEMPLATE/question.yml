@@ -5,12 +5,16 @@ labels: ["question"]
 assignees:
   - iceeburr
 body:
+  - type: markdown
+    attributes:
+      value: Got a question? Let's answer it!
   - type: textarea
     id: description
     attributes:
       label: "Description"
       description: "Please enter an explicit description of what you want to ask."
-      value: "Short, but detailed description of your question."
+      placeholder: "Short, but detailed description of your question."
+      render: markdown
     validations:
       required: true
   - type: textarea
@@ -18,7 +22,7 @@ body:
     attributes:
       label: "Screenshots & Videos"
       description: "If applicable, add any media files to help explain your question."
-      value: "https://imgur.com/a/iceeburr-5LJTfgw"
+      placeholder: "https://imgur.com/a/iceeburr-5LJTfgw"
     validations:
       required: false
   - type: textarea

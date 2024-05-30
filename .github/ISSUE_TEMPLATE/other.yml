@@ -10,5 +10,5 @@ body:
   - type: textarea
     attributes:
       label: "Report"
-      description: "..."
-      placeholder: "..."
+      description: "Please describe everything about your issue. Only use template this if you know what you are doing!"
+      placeholder: "Detailed description of your report."

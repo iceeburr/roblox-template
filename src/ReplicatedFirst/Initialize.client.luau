@@ -14,12 +14,12 @@ local LightingEffects = ReplicatedFirst.LightingEffects
 
 --// Code \\--
 -- Remove the default loading screen and then replace it
-local PlayerGUI: PlayerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+local PlayerGUI: PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
 Screen.Parent = PlayerGUI
 ReplicatedFirst:RemoveDefaultLoadingScreen()
 
 -- Add the default lighting effects
 for _, Object in pairs(LightingEffects:GetDescendants()) do
-    Object.Parent = Lighting
+   Object.Parent = Lighting
 end
 LightingEffects:Destroy()
