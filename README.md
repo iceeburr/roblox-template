@@ -191,7 +191,7 @@ Make sure you read the <a href=".github/CODE_OF_CONDUCT.md">Code of Conduct</a> 
 <h2 id="License & Copyright">License & Copyright</h2>
 
 <p>
-This template is distributed and licensed under the GNU (General Public License) Version 3. See <a href="LICENSE">LICENSE</a> for more detailed information.
+This template is distributed and licensed under the MIT License. See <a href="LICENSE">LICENSE</a> for more detailed information.
 </p>
 
 <a href="#Project"><i><u>Back To Top ⬆️</u></i></a>

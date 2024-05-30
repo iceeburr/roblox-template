@@ -30,8 +30,10 @@
   color: 1d76db
   description: "Upgrade or downgrade of project dependencies."
 - name: "question"
+  color: 7ca966
   description: "Further information is requested."
 - name: "duplicate"
+  color: dea051
   description: "This issue or pull request already exists."
 
 - name: "in-progress"
@@ -44,15 +46,13 @@
   color: fef2c0
   description: "This issue or PR is exempted from the stable bot."
 - name: "wontfix"
+  color: ee423b
   description: "This will not be worked on."
 
 - name: "security"
   color: ee0701
   description: "Marks a security issue that needs to be resolved ASAP."
 - name: "incomplete"
-  color: fef2c0
-  description: "Marks a PR or issue that is missing information."
-- name: "invalid"
   color: fef2c0
   description: "Marks a PR or issue that is missing information."
 

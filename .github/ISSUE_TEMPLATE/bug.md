@@ -1,27 +1,77 @@
----
-name: Bug report
-about: Create a bug report to help us improve
-title: "Bug Summary"
-labels: "bug"
-assignees: ""
----
-
-**Describe the bug**
-
-<!-- A clear and concise description of what the bug is. -->
-
-**How to reproduce**
-
-Steps to reproduce the behavior:
-
-1. ...
-2. ...
-3. ...
-
-**Expected behavior**
-
-<!-- A clear and concise description of what you expected to happen. -->
-
-**Additional context**
-
-<!-- Add any other context about the problem here. If needed include log files, operating system, verions, etc. -->
+name: "Bug Report"
+description: Create a new report for a bug.
+title: "Summarize your report."
+labels: ["bug"]
+assignees: iceeburr
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Please enter an explicit description of your issue.
+      value: Short and explicit description of your incident...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "Reproduction Steps"
+      description: Please tell us exactly how you reproduced it.
+      value: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: "Screenshots & Videos"
+      description: If applicable, add any media files to help explain your problem.
+      value: |
+        ![DESCRIPTION](LINK.png)
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs"
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: bash
+    validations:
+      required: false
+  - type: dropdown
+    id: "os"
+    attributes:
+      label: "Operating System"
+      description: "Which operating systems are affected?"
+      multiple: true
+      options:
+        - Windows
+        - MacOS
+        - Linux
+        - Other
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional Information"
+      description: "Include any additional information about the issue."
+    validations:
+      required: false
+  - type: checkboxes
+    id: "checklist"
+    attributes:
+      label: "Checklist"
+      description: "Please try to do all of the checks below."
+      options:
+        - label: "Reproduced the issue at least once."
+          required: false
+        - label: "Attached valid error logs."
+          required: false
+        - label: "Included screenshots of the bug happening."
+          required: false
