@@ -1,6 +1,6 @@
 name: "Feature Request"
 description: "Create a new report for a bug."
-title: "Summarize your report."
+title: "Summarize your suggestion."
 labels: ["enhancement"]
 assignees:
   - iceeburr
