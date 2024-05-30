@@ -1,50 +1,48 @@
 name: "Bug Report"
-description: Create a new report for a bug.
+description: "Create a new report for a bug."
 title: "Summarize your report."
 labels: ["bug"]
-assignees: iceeburr
+assignees: "iceeburr"
 body:
   - type: textarea
     id: description
     attributes:
       label: "Description"
-      description: Please enter an explicit description of your issue.
-      value: Short and explicit description of your incident...
+      description: "Please enter an explicit description of your issue."
+      value: "Short and explicit description of your incident..."
     validations:
       required: true
   - type: textarea
     id: reproduction
     attributes:
       label: "Reproduction Steps"
-      description: Please tell us exactly how you reproduced it.
+      description: "Please tell us exactly how you reproduced it."
       value: |
-        1. Go to '...'
-        2. Click on '....'
-        3. Scroll down to '....'
-        4. See error
-      render: bash
+        "1. Go to '...'"
+        "2. Click on '....'"
+        "3. Scroll down to '....'"
+        "4. See error"
+      render: shell
     validations:
       required: true
   - type: textarea
     id: media
     attributes:
       label: "Screenshots & Videos"
-      description: If applicable, add any media files to help explain your problem.
-      value: |
-        ![DESCRIPTION](LINK.png)
-      render: bash
+      description: "If applicable, add any media files to help explain your problem."
+      value: "https://imgur.com/a/iceeburr-5LJTfgw"
     validations:
       required: false
   - type: textarea
     id: logs
     attributes:
       label: "Logs"
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: bash
+      description: "Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks."
+      render: shell
     validations:
       required: false
   - type: dropdown
-    id: "os"
+    id: os
     attributes:
       label: "Operating System"
       description: "Which operating systems are affected?"
@@ -64,7 +62,7 @@ body:
     validations:
       required: false
   - type: checkboxes
-    id: "checklist"
+    id: checklist
     attributes:
       label: "Checklist"
       description: "Please try to do all of the checks below."

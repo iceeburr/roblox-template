@@ -1,6 +1,6 @@
 <div align='center'>
     <img src="./gh-assets/project_logo.svg" alt="Project Logo" width="150" height="150">
-    <h1 id="Project">Your Project Name</h1>
+    <h1 id="Top">Your Project Name</h1>
     <h3>A template for Roblox developers to integrate advanced CLI tools like Rojo into GitHub workflows, streamlining build, test, and deploy processes.</h3>
     <img src="https://github.com/iceeburr/roblox-video-codec/actions/workflows/ci.yaml/badge.svg" alt="CI">
     <img src="https://github.com/iceeburr/roblox-video-codec/actions/workflows/release.yaml/badge.svg" alt="Build & Deploy">
@@ -8,12 +8,11 @@
     <a href="https://www.paypal.me/iceeburr"><img src="https://img.shields.io/badge/donate-PayPal-green.svg" alt="Donate"></a>
 </div>
 
-<h1>THIS REPOSITORY IS STILL IN DEVELOPMENT<br>DO NOT USE IT YET!!!</h1>
+<h1>THIS TEMPLATE IS STILL IN DEVELOPMENT<br>DO NOT USE IT YET!!!</h1>
 <h2 id="Navigation">Navigation</h2>
 
 <nav>
     <ol>
-        <li><a href="#Navigation">Navigation</a></li>
         <li><a href="#Project">Project</a></li>
         <ol>
             <li><a href="#About">About</a></li>
@@ -27,7 +26,9 @@
     </ol>
 </nav>
 
-<h2 id="About">About</h2>
+<h2 id="Project">Project</h3>
+
+<h3 id="About">About</h2>
 
 <p>
 This repository serves as a template designed specifically for Roblox developers looking to enhance their development workflow through advanced integration with CLI (Command Line Interface) tools such as Rojo and Tarmac. It aims to streamline the process of building, testing, and deploying Roblox games and assets by leveraging these powerful tools within GitHub Actions workflows. By utilizing this template, developers can automate repetitive tasks, ensure consistency across projects, and significantly reduce manual intervention required during the development lifecycle.
@@ -35,10 +36,10 @@ This repository serves as a template designed specifically for Roblox developers
 
 <details>
     <summary>Featured Games</summary>
-    <a href="https://www.roblox.com/games/4618049391/V3-9-3-Patch-T-ang-County-Hebei"><h3>Tang County by Hebei Studios</h3>
-    <img src="https://tr.rbxcdn.com/a248ac5d3c509cb27cc4a44c7e978bbe/768/432/Image/Webp" alt="Tang County"></a>
+    <a href="https://www.roblox.com/games/4618049391/V3-9-3-Patch-T-ang-County-Hebei"><h3>Tang County by Hebei Studios</h3></a>
+    <img src="https://tr.rbxcdn.com/a248ac5d3c509cb27cc4a44c7e978bbe/768/432/Image/Webp" alt="Tang County">
     <br>
-    <i>Want your game in this list? Contact me on Discord @iceeburr</i>
+    <i>Want your game in this list? Open an issue or contact me on Discord @iceeburr</i>
 </details>
 
 <h2 id="Features">Features</h2>
@@ -191,7 +192,7 @@ Make sure you read the <a href=".github/CODE_OF_CONDUCT.md">Code of Conduct</a> 
 <h2 id="License & Copyright">License & Copyright</h2>
 
 <p>
-This template is distributed and licensed under the MIT License. See <a href="LICENSE">LICENSE</a> for more detailed information.
+This template is distributed and licensed under the MIT License. See <a href="LICENSE">LICENSE</a> for more detailed information. This is NOT legal advice!
 </p>
 
-<a href="#Project"><i><u>Back To Top ⬆️</u></i></a>
+<a href="#Top"><i><u>Back To Top ⬆️</u></i></a>
